@@ -1,0 +1,20 @@
+.urlicon-field {
+	display: inline-block;
+	position: relative;
+}
+
+.urlicon-image {
+	height: 14px;
+	margin: 3px;
+	width: 14px;
+	position: absolute;
+}
+
+.urlicon-input {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	display: block;
+	margin: 0;
+	padding-left: 17px;
+	width: 100%;
+}

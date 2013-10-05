@@ -1,0 +1,35 @@
+<!doctype html>
+<title>urlicon</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="../../urlicon.css">
+<link rel="stylesheet" href="index.css">
+<script src="../../urlicon.js"></script>
+<script>Urlicon.path = '../../image';</script>
+
+<body>
+	<h1>urlicon</h1>
+
+	<p><strong>urlicon</strong> beautifies web address inputs with informative glyphs and tastefully recomposed urls.
+
+	<p>Provide a web address &mdash; a site, blog, resume, photo, video, or social media page.
+
+	<h3>Example: Regular Input</h3>
+
+	<p><input id="foo">
+
+	<p><button onclick="new Urlicon(document.getElementById('foo'))">enable urlicon</button>
+
+	<h3>Example: URL Input</h3>
+
+	<p><input id="bar" type="url" required>
+
+	<p><button onclick="new Urlicon(document.getElementById('bar'))">enable urlicon</button>
+
+	<h3>Example: Regular Input (with favicon)</h3>
+
+	<p><input id="qux" required>
+
+	<p><button onclick="new Urlicon(document.getElementById('qux'), { usefavicon: true })">enable urlicon</button>
+</body>
