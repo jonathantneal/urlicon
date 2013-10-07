@@ -218,7 +218,7 @@
 			href: ''
 		},
 		www: {
-			regx: new RegExp(HTTP + '(?:\\/.*)?)$', 'i'),
+			regx: new RegExp(HTTP + '(?:\\/[\\w\\d-._~:/?#\\[\\]@!$&\'()*+,;=]*)?)', 'i'),
 			href: ''
 		}
 	};
