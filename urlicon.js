@@ -2,7 +2,8 @@
 	'use strict';
 
 	var
-	PROTOCOL = '(?:\\w+:\\/\\/)',
+	URL = '[\\w\\d-._~:/?#\\[\\]@!$&\'()*+,;=]',
+	PROTOCOL = '(?:' + URL + '+:\\/\\/)',
 	HTTP = PROTOCOL + '?((?:[a-z0-9-.]*[a-z0-9][a-z0-9-]*[a-z0-9]\\.[a-z][a-z0-9-]*[a-z0-9]|\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})',
 	HTTP_FILE = HTTP + '\\/.*\\.',
 	ADD_EVENT_LISTENER = 'addEventListener' in window ? 'addEventListener' : 'attachEvent',
@@ -218,7 +219,7 @@
 			href: ''
 		},
 		www: {
-			regx: new RegExp(HTTP + '(?:\\/[\\w\\d-._~:/?#\\[\\]@!$&\'()*+,;=]*)?)', 'i'),
+			regx: new RegExp(HTTP + '(?:\\/' + URL + '*)?)', 'i'),
 			href: ''
 		}
 	};
